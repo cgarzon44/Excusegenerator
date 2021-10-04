@@ -1,6 +1,5 @@
-
 function randomInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min)) + min;
   }
 
 
@@ -12,7 +11,7 @@ function Getexcuse(){
     let when = ['before the class' , 'right on time' , 'when I finished' , 'during my lunch' , 'while I was praying'];
 
    
-    return who[randomInteger(0, 3)]+ ' ' + action[randomInteger(0, 3)]+ ' ' + what[randomInteger(0, 2)]+ ' ' + when[randomInteger(0, 4)]
+    return who[randomInteger(0, who.length)]+ ' ' + action[randomInteger(0, 3)]+ ' ' + what[randomInteger(0, 2)]+ ' ' + when[randomInteger(0, 4)]
 
 
 }
